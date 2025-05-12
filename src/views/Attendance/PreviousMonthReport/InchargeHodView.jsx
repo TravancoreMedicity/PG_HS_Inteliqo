@@ -87,7 +87,7 @@ const InchargeHodView = () => {
                         };
                     });
 
-                    const array = updatedSecondApiData?.filter(val => val.em_no === emply?.em_no)
+                    const array = updatedSecondApiData?.filter(val => val.em_no === emply?.em_no)?.sort((a, b) => new Date(a.duty_day) - new Date(b.duty_day));
                     setTableData(array.slice(0, -1))
                     // setTableData(array)
 

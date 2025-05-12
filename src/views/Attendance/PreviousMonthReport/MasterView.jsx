@@ -69,11 +69,11 @@ const MasterView = () => {
                         }
                     })
 
-                    const updatedSecondApiData = setData.map(data => {
-                        const correspondingFirstData = firstApiData.filter(firstApiData => {
+                    const updatedSecondApiData = setData?.map(data => {
+                        const correspondingFirstData = firstApiData?.filter(firstApiData => {
                             return (
-                                parseInt(firstApiData.emp_code) === data.em_no &&
-                                new Date(firstApiData.punch_time).toDateString() === new Date(data.duty_day).toDateString()
+                                parseInt(firstApiData?.emp_code) === data?.em_no &&
+                                new Date(firstApiData.punch_time)?.toDateString() === new Date(data?.duty_day).toDateString()
                             );
                         });
                         return {
@@ -82,8 +82,7 @@ const MasterView = () => {
                         };
                     });
 
-                    const array = updatedSecondApiData?.filter(val => val.em_no === emply?.em_no)
-
+                    const array = updatedSecondApiData?.filter(val => val.em_no === emply?.em_no)?.sort((a, b) => new Date(a.duty_day) - new Date(b.duty_day));
                     setTableData(array.slice(0, -1))
 
                 } else {
