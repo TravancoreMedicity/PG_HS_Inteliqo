@@ -1,0 +1,81 @@
+.empImage{
+    min-height: 10rem;
+    max-height: 11.4rem;
+    height: 11.3rem;
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 7.7rem;
+    overflow: auto;
+    }
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+/* For the Whole Body  */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #303C54;
+    border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #303C54; 
+}
+
+/* For the Family Details Table */
+/* width */
+.familydetl::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+.familydetl::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+}
+/* Handle */
+.familydetl::-webkit-scrollbar-thumb {
+    background: #303C54;
+    border-radius: 5px;
+}
+/* Handle on hover */
+.familydetl::-webkit-scrollbar-thumb:hover {
+    background: #303C54; 
+}
+
+.previousAmentWindow {
+    max-height: 31.3rem;
+    min-height: 7rem;
+    overflow:auto;
+}
+.card-casual-leave{
+    position: relative;
+    height: 10rem;
+    overflow: auto;
+}
+.card-casual-leave-fixed{
+    position: relative;
+    height: 6.2rem;
+    overflow: auto;
+}
+.custom-datefeild-height{
+    width:8.5rem;
+    min-height: 1.5rem;
+    max-height: 2rem;
+    height: 1.5rem;
+    padding-top: 0.1rem;
+}
+.card-salary-information{
+    position: relative;
+    height: 9rem;
+    overflow: auto;
+}
