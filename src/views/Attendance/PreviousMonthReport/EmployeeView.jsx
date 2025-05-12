@@ -66,7 +66,8 @@ const EmployeeView = () => {
                         new_field: correspondingFirstData.map(data => data.punch_time)
                     };
                 });
-                setTableData(updatedSecondApiData.slice(0, -1))
+                const array = updatedSecondApiData?.sort((a, b) => new Date(a.duty_day) - new Date(b.duty_day));
+                setTableData(array.slice(0, -1))
                 // setTableData(updatedSecondApiData)
             }
 
